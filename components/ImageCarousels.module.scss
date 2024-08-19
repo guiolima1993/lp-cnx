@@ -1,0 +1,135 @@
+.imageCarousels {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 8rem 0 4rem 0;
+}
+
+.carouselContainer {
+  text-align: center;
+}
+
+.productTitle {
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  max-width: 44%;
+  letter-spacing: 2px;
+
+  span {
+    color: #38d0e2;
+    font-size: 1.8rem;
+  }
+}
+
+.titleImage {
+  margin-bottom: 10px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.infoText {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0 4rem;
+}
+
+.carouselInner {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px; 
+}
+
+.video {
+  max-height: 468px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: flex;
+}
+
+.carouselItem {
+  flex: 0 0 50%; 
+  max-width: 40%;
+  scroll-snap-align: start;
+}
+
+.carouselItem img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #38d0e2;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 55px;
+  background-color: transparent;
+}
+
+.leftArrow {
+  left: 0;
+}
+
+.rightArrow {
+  right: 0;
+}
+
+// Mobile view
+@media (max-width: 800px) {
+
+  .imageCarousels {
+    padding: 3rem 0;
+  }
+
+  .titleImage {
+    max-width: 150px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .carousel {
+    padding: 0;
+  }
+
+  .carouselItem {
+    flex: 0 0 80%;
+    max-width: 100%;
+  }
+
+  .video {
+    max-height: 325px;
+    border-radius: 20px
+  }
+}
+
+
+@media (min-width: 769px) {
+  .carouselInner {
+    overflow-x: hidden;
+  }
+}

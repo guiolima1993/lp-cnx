@@ -1,0 +1,276 @@
+.tvSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+
+  .content {
+    max-width: 700px;
+    margin-bottom: 20px;
+
+    .title {
+      margin: 0 auto 4rem auto;
+      text-align: center;
+      font-size: 1.7rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      max-width: 100%;
+      letter-spacing: 2px;
+
+      span {
+        color: #38d0e2;
+        font-size: 1.8rem;
+      }
+    }
+
+    p {
+      font-size: 1.45rem;
+      color: #dedede;
+      font-weight: 100;
+    }
+  }
+
+  .imageWrapper {
+    width: 100%;
+    max-width: 1200px;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-width: 700px;
+      margin-bottom: -6rem;
+    }
+  }
+
+  .texts {
+    width: 100%;
+    text-align: left;
+    max-width: 700px;
+    margin-top: -4rem;
+  }
+
+  .textsInfo {
+    color: #38d0e2;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  .textsName {
+    color: #fff;
+    font-size: 90px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    img {
+      max-width: 55px;
+      max-height: 55px;
+    }
+  }
+
+  .text {
+    color: #fff;
+    font-weight: 100;
+    margin-top: 2rem;
+    font-size: 22px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(to right, #2bb9ca, #042338) 1;
+      padding: 2rem 0;
+
+      img {
+        max-width: 60px;
+        background-color: #2bb9ca;
+        height: 60px;
+        width: 60px;
+        padding: 4px;
+        border-radius: 50%;
+        min-width: 60px;
+      }
+
+      p {
+        margin: 0;
+        color: #fff;
+        font-weight: 100;
+        font-size: 22px;
+      }
+    }
+
+    .last {
+      border: none;
+    }
+  }
+
+  .Title {
+    color: #38d0e2;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 2rem;
+  }
+  
+  .textTitle {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    font-weight: normal;
+    font-size: 22px;
+  }
+
+  .textContent {
+    color: #fff;
+    margin: 3rem 0 0 0;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #23aa5c;
+    border: none;
+    margin: 4rem auto 0 auto;
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+    animation: zoom-in 2s ease-out infinite;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.412);
+  
+    img {
+      max-width: 30px;
+      margin-right: 10px;
+    }
+  
+    @keyframes zoom-in {
+      0% {
+        transform: scale(1, 1);
+      }
+  
+      50% {
+        transform: scale(1.2, 1.2);
+      }
+  
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+  }
+
+  .imgSecurity {
+    width: 100%;
+    display: flex;
+    margin: 2rem auto 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .tvSection {
+    padding: 2rem 0;
+
+    .content {
+      max-width: 100%;
+  
+      .title {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        padding: 0 20px;
+  
+        span {
+          font-size: 1.1rem;
+        }
+      }
+  
+      p {
+        font-size: 1rem;
+        padding: 0 20px;
+      }
+    }
+
+    .imageWrapper {
+      img {
+        margin-bottom: -1rem;
+      }
+    }
+
+    .texts {
+      padding: 0 20px;
+    }
+
+    .textsInfo {
+      font-size: 18px;
+    }
+
+    .textsName {
+      font-size: 45px;
+      line-height: 94%;
+
+      img {
+        max-width: 40px;
+        max-height: 40px;
+      } 
+    }
+
+    .text {
+      font-size: 16px;
+      font-weight: 200;
+    }
+
+    .list {
+  
+      li {
+        border-bottom: 1px solid transparent;
+  
+        img {
+          max-width: 40px;
+          height: 40px;
+          width: 40px;
+          min-width: 40px;
+        }
+  
+        p {
+          font-size: 16px !important;
+        }
+      }
+    }
+
+    .Title {
+      font-size: 20px;
+    }
+    
+    .textTitle {
+      font-size: 15px;
+    }
+  
+    .textContent {
+      font-size: 16px;
+    }
+  
+  }
+}

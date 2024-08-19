@@ -1,0 +1,124 @@
+.hero-section {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 0;
+
+
+  .container {
+    h1 {
+      font-size: 1.7rem;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      max-width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto 2rem auto;
+
+      span {
+        color: #38d0e2;
+      }
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: #fff;
+      font-weight: 200;
+      margin-bottom: 2rem;
+
+      span {
+        font-weight: bolder;
+      }
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 1.25rem;
+      background-color: #23aa5c;
+      border: none;
+      animation: zoom-in-zoom-out 2s ease-out infinite;
+
+      img {
+        max-width: 30px;
+        margin-right: 10px;
+      }
+
+      @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+
+        50% {
+          transform: scale(1.2, 1.2);
+        }
+
+        100% {
+          transform: scale(1, 1);
+        }
+      }
+    }
+
+    .txt {
+      color: #fff;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 300;
+      margin: 2rem 0 1rem 0;
+    }
+
+    .status-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .circle {
+      width: 10px;
+      height: 10px;
+      background-color: #23aa5c;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .status-text {
+      font-size: 16px;
+      color: #fff;
+    }
+
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-section {
+    .container {
+      h1 {
+        font-size: 18px;
+        max-width: 100%;
+        line-height: 150%;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      iframe {
+        height: 240px;
+      }
+
+      .btn {
+        font-size: 1em;
+
+        img {
+          max-width: 24px;
+        }
+      }
+    }
+  }
+}

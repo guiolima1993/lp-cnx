@@ -1,0 +1,171 @@
+.testimonials-section {
+  padding: 4rem 0;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center;
+}
+
+.title {
+  margin: 0 auto 1rem auto;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  span {
+    color: #38d0e2;
+    font-size: 1.8rem;
+  }
+}
+
+.text {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 6rem auto;
+  font-size: 20px;
+  color: #dedede;
+  font-weight: 100;
+}
+
+.productTitle {
+  margin: 6rem auto 0 auto;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  max-width: 44%;
+  letter-spacing: 2px;
+
+  span {
+    color: #38d0e2;
+    font-size: 1.8rem;
+  }
+}
+
+.testimonial-card {
+  flex: 1 1 30%;
+  box-sizing: border-box;
+  padding: 2rem;
+  background-color: #fff;
+  max-width: 30%;
+  margin: 3rem 0;
+  min-height: 280px;
+  position: relative;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.testimonial-card-display {
+  display: flex;
+
+  video,
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 140px;
+    min-width: 140px;
+    position: absolute;
+    right: 5%;
+    top: -20%;
+    border-radius: 20px;
+    min-height: 250px;
+    max-height: 250px;
+    object-fit: cover;
+  }
+}
+
+.testimonial-card img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #333;
+  max-width: 55%;
+}
+
+.testimonial-name {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #000;
+  font-weight: bolder;
+}
+
+@media (max-width: 991px) {
+  .testimonials-section {
+    padding: 2rem 0;
+  }
+
+  .testimonials-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    gap: 10px;
+    justify-content: flex-start; 
+    width: 100%; 
+    position: relative;
+    scroll-snap-type: x mandatory; 
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 18px;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .testimonial-name {
+    max-width: 50%;
+  }
+
+  .text {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .testimonial-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    scroll-snap-align: start;
+    min-height: auto;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .testimonial-card img {
+    max-width: 60px;
+  }
+
+  .testimonial-text {
+    font-size: 12px;
+  }
+  
+  .testimonial-name {
+    font-size: 12px;
+  }
+
+  .productTitle {
+    font-size: 1.2rem !important;
+    max-width: 100%;
+  
+    span {
+      font-size: 1.1rem;
+    }
+  }
+
+  .imageCarousels {
+    padding: 2rem 0;
+  }
+}

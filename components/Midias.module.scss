@@ -1,0 +1,127 @@
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 4rem 20px;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  max-width: 90%;
+  letter-spacing: 2px;
+
+  span {
+    color: #38d0e2;
+    font-size: 1.8rem;
+  }
+}
+
+.imagesWrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.imageItem {
+  width: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imageItem img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.imgSecurity {
+  width: 100%;
+  max-width: 60%;
+  display: flex;
+  margin: 2rem auto 0 auto;
+}
+
+@media (max-width: 768px) {
+  .imagesWrapper {
+    flex-direction: column;
+  }
+
+  .imageItem {
+    width: 100%;
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #23aa5c;
+  border: none;
+  margin: 2rem auto 0 auto;
+  border-radius: 10px;
+  display: flex;
+  width: fit-content;
+  animation: zoom-in 2s ease-out infinite;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.412);
+
+  img {
+    max-width: 30px;
+    margin-right: 10px;
+  }
+
+  @keyframes zoom-in {
+    0% {
+      transform: scale(1, 1);
+    }
+
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .section {
+    padding: 2rem 0;
+    background-size: cover;
+    background-image: url(https://cdn.shopify.com/s/files/1/0709/7086/7961/files/fundo-midias.webp?v=1723945808);
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    margin: 0 auto;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  .imgSecurity {
+    max-width: 100%;
+  }
+}
